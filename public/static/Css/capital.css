@@ -43,7 +43,7 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 .menu.off a { visibility: hidden; opacity: 0; margin-left: -10px; }
 
 /*第一屏*/
-.p1-txt { font-size: 16px; position: absolute; top: 70%; left: 0; width: 100%; text-align: center; color: #fff; }
+.p1-txt { font-size: 16px; float: left;  width: 100%; text-align: center; color: #fff; margin-top: 14px;}
 .p1-txt span { display: inline-block; letter-spacing: 20px; position: relative; padding: 0 1em; margin-bottom: 10px; }
 .p1-txt span:before, .p1-txt span:after { content: ""; position: absolute; border: solid #fff; width: 5px; height: 10px; }
 .p1-txt span:before { top: 0; left: 0; border-width: 1px 0 0 1px; }
