@@ -1,0 +1,957 @@
+﻿@charset "UTF-8";
+/* 调整其它页面样式 begin*/
+.con-me_right_announce, .con-me_others {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cm_ths_recruit {
+    margin-right: 0;
+}
+
+.cm_ths_recruit_content p a {
+    height: auto;
+    line-height: inherit;
+}
+ 
+.cm_ths_recruit_content p a:first-child {
+    margin-right: 43px;
+}
+
+.cm_ol_content {
+    width: 340px;
+}
+
+.cm_ol_content a {
+    height: auto;
+    line-height: inherit;
+    color: #CD000F;
+}
+
+.cm_ol_content p:hover .cm_ol_arrow {
+    margin-right: 5px;
+}
+
+.cm_ol_arrow {
+    vertical-align: middle;
+    -webkit-transition: margin-right .2s;
+    transition: margin-right .2s;
+}
+
+.i-partners .i-partner {
+    text-align: center;
+}
+
+.i-partners .i-partner img {
+    display: inline-block;
+}
+
+.menu button:focus {
+    outline: none;
+}
+
+.capital-index {
+    background-image: url("../Images/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/*大会顾问组 样式 begin*/
+.section-advisor {
+    background-image: url("../Images/advisor.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.advisor-list {
+    padding-left: 0;
+    text-align: center;
+}
+
+.advisor-list .advisor-item {
+    display: inline-block;
+    width: 211px;
+    vertical-align: top;
+    margin: 0 23px;
+}
+
+.advisor-list .advisor-intro {
+    margin-top: 20px;
+}
+
+.advisor-list .advisor-intro dt {
+    color: #fff;
+    border-left: 4px solid #CD000F;
+    font-size: 16px;
+    padding: 0 10px;
+    float: left;
+}
+
+.advisor-list .advisor-intro dd {
+    float: left;
+    max-width: 150px;
+    text-align: left;
+    font-size: 14px;
+    color: #dddddd;
+}
+
+/*大会顾问组 样式 end*/
+/* 调整其它页面样式 end*/
+/* fix 冲突 begin*/
+.section-schedule .tabs-schedule .nav-tabs li a {
+    height: auto;
+}
+
+.section-schedule .table-schedule .link {
+    height: auto;
+    line-height: 20px;
+}
+
+.section-schedule .table-schedule .icon-link {
+    height: auto;
+    line-height: inherit;
+}
+
+.section-schedule .download-schedule .fa-download {
+    vertical-align: baseline;
+}
+
+.modal-schedule .buy {
+    height: auto;
+}
+
+.modal-schedule .buy .fa-play {
+    vertical-align: baseline;
+}
+
+.section-topics .list-topics-navs .fa {
+    vertical-align: baseline;
+}
+
+.section-schedule,
+.section-topics {
+    font-size: 14px;
+}
+
+@media (max-width: 1500px) {
+    .fp-tableCell {
+        zoom: 0.8;
+    }
+}
+
+/* fix 冲突 end*/
+/* 大会日程、大会议题 样式 begin*/
+.section-schedule {
+    background-image: url("../Images/section-schedule-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-schedule .section-schedule-title {
+    margin-bottom: 56px;
+}
+
+.section-schedule .tabs-schedule {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.section-schedule .tabs-schedule .nav-tabs {
+    border-top: 1px solid #cd000f;
+    border-bottom: 1px solid #cd000f;
+    padding: 1px 0;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li a {
+    border: none;
+    border-radius: 0;
+    line-height: 20px;
+    color: #cd000f;
+    letter-spacing: 3px;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li a:hover, .section-schedule .tabs-schedule .nav-tabs li a:active {
+    border: none;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li.active a {
+    background-color: #cd000f;
+    color: #fff;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li.active a:hover, .section-schedule .tabs-schedule .nav-tabs li.active a:active, .section-schedule .tabs-schedule .nav-tabs li.active a:focus {
+    border: none;
+}
+
+.section-schedule .tabs-schedule .tab-content {
+    height: 450px;
+}
+
+.section-schedule .table-schedule-title {
+    text-align: center;
+    color: #cd000f;
+    font-size: 20px;
+    margin: 57px 0 38px;
+}
+
+.section-schedule .table-schedule-title time {
+    font-weight: bold;
+    margin-right: 30px;
+    letter-spacing: 4px;
+}
+
+.section-schedule .table-schedule-title .text-gray {
+    color: #666666;
+}
+
+.section-schedule .table-schedule {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.section-schedule .table-schedule td {
+    font-size: 14px;
+    padding: 20px 15px;
+    border-color: #bfbfbf;
+}
+
+.section-schedule .table-schedule time {
+    display: block;
+    font-size: 18px;
+    color: #cd000f;
+    margin-bottom: 5px;
+}
+
+.section-schedule .table-schedule .title {
+    margin-bottom: 10px;
+}
+
+.section-schedule .table-schedule .intro {
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.section-schedule .table-schedule .en {
+    color: #8f8f8f;
+}
+
+.section-schedule .table-schedule .link {
+    position: relative;
+    color: #444444;
+}
+
+.section-schedule .table-schedule .link:hover, .section-schedule .table-schedule .link.active {
+    color: #cd000f;
+}
+
+.section-schedule .table-schedule .link:hover:after, .section-schedule .table-schedule .link.active:after {
+    background-color: #cd000f;
+}
+
+.section-schedule .table-schedule .link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1px;
+    background-color: #444;
+    width: 100%;
+}
+
+.section-schedule .table-schedule .icon-link {
+    float: right;
+    width: 20px;
+}
+
+.section-schedule .table-schedule .icon-link.active .has-content {
+    width: 19px;
+}
+
+.section-schedule .table-schedule .icon-link.active .has-content:before {
+    width: 19px;
+}
+
+.section-schedule .table-schedule .icon-link .has-content {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 9px;
+    height: 1px;
+    background-color: #cd000f;
+    -webkit-transition: width .2s;
+    transition: width .2s;
+}
+
+.section-schedule .table-schedule .icon-link .has-content:before, .section-schedule .table-schedule .icon-link .has-content:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: #cd000f;
+    z-index: 10;
+    left: 0;
+}
+
+.section-schedule .table-schedule .icon-link .has-content:before {
+    width: 13px;
+    bottom: 5px;
+    -webkit-transition: width .2s;
+    transition: width .2s;
+}
+
+.section-schedule .table-schedule .icon-link .has-content:after {
+    width: 19px;
+    top: 6px;
+}
+
+.section-schedule .download-schedule {
+    line-height: 30px;
+    color: #666666;
+}
+
+.section-schedule .download-schedule span {
+    display: inline-block;
+    letter-spacing: 5px;
+    vertical-align: middle;
+}
+
+.section-schedule .download-schedule .download {
+    display: inline-block;
+    width: 29px;
+    height: 33px;
+    background-image: url("../Images/section-schedule-download.png");
+    vertical-align: middle;
+}
+
+.section-schedule .download-schedule:hover {
+    color: #cd000f;
+}
+
+.section-schedule .download-schedule:hover .download {
+    background-position: -41px 0px;
+}
+
+.modal-schedule {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+    background-color: #fff;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.modal-schedule.show {
+    z-index: 2000;
+    opacity: 1;
+}
+
+.modal-schedule .schedule-detail-list {
+    position: absolute;
+    width: 980px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.modal-schedule .schedule-detail {
+    padding-bottom: 23px;
+    border-bottom: 5px solid #ddd;
+}
+
+.modal-schedule .schedule-detail:focus {
+    outline: none;
+}
+
+.modal-schedule .schedule-detail .title .en {
+    font-size: 52px;
+    color: #666;
+}
+
+.modal-schedule .schedule-detail .title .zh {
+    font-size: 18px;
+    color: #cd000f;
+}
+
+.modal-schedule .schedule-detail .title .zh:after {
+    content: '';
+    display: block;
+    width: 20px;
+    margin-top: 30px;
+    height: 2px;
+    background-color: #cd000f;
+}
+
+.modal-schedule .schedule-detail .intro {
+    max-width: 780px;
+    margin-top: 30px;
+    color: #8f8f8f;
+    line-height: 1.7;
+}
+
+.modal-schedule .schedule-detail .teacher {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 27px 0;
+    margin: 27px 0;
+}
+
+.modal-schedule .schedule-detail .teacher .avatar {
+    display: inline-block;
+    width: 142px;
+    height: 142px;
+    vertical-align: top;
+}
+
+.modal-schedule .schedule-detail .teacher .info {
+    display: inline-block;
+    margin-left: 30px;
+    max-width: 750px;
+}
+
+.modal-schedule .schedule-detail .teacher .name {
+    font-size: 24px;
+    color: #666;
+}
+
+.modal-schedule .schedule-detail .teacher .des {
+    color: #8f8f8f;
+    margin: 8px 0;
+}
+
+.modal-schedule .schedule-detail .teacher .content {
+    color: #8f8f8f;
+}
+
+.modal-schedule .schedule-detail .teacher .content b {
+    color: #666;
+}
+
+.modal-schedule .schedule-detail .teacher .content:after {
+    content: '';
+    display: block;
+    width: 20px;
+    margin-top: 10px;
+    height: 3px;
+    background-color: #cd000f;
+}
+
+.modal-schedule .schedule-detail .join .ti {
+    font-size: 18px;
+    color: #cd000f;
+    margin-bottom: 15px;
+}
+
+.modal-schedule .schedule-detail .join .fa {
+    margin-right: 3px;
+}
+
+.modal-schedule .schedule-detail .join .term {
+    padding-right: 17px;
+    color: #666666;
+}
+
+.modal-schedule .schedule-detail-list-nav {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    font-size: 40px;
+    color: #8f8f8f;
+}
+
+.modal-schedule .schedule-detail-list-nav .current {
+    vertical-align: middle;
+    padding: 0 30px;
+}
+
+.modal-schedule .schedule-detail-list-nav .fa {
+    color: #666;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.modal-schedule .schedule-detail-list-nav .fa:hover {
+    color: #cd000f;
+}
+
+.modal-schedule .schedule-detail-list-nav .arrow {
+    color: #666;
+    cursor: pointer;
+}
+
+.modal-schedule .buy {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    line-height: 43px;
+    border: 1px solid #cd000f;
+    border-radius: 23px;
+    font-size: 24px;
+    color: #cd000f;
+    padding: 0 20px;
+}
+
+.modal-schedule .buy .fa-play {
+    font-size: 14px;
+    vertical-align: 3px;
+}
+
+.modal-schedule .buy:hover {
+    background-color: #e60012;
+    color: #fff;
+}
+
+.modal-schedule .buy:hover .fa-play {
+    color: #fff;
+}
+
+.modal-schedule .fa-times {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    font-size: 30px;
+    color: #666;
+    opacity: .5;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.modal-schedule .fa-times:hover{
+    transform: rotate(180deg);
+}
+
+.section-topics {
+    background-image: url("../Images/section-topics-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-topics .section-topics-title {
+    margin-bottom: 80px;
+}
+
+.section-topics .list-topics {
+    width: 1049px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+}
+
+.section-topics .list-topics .item-topic {
+    position: relative;
+    display: inline-block;
+    height: 470px;
+    margin: 0 10px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.section-topics .list-topics .item-topic.reverse .flipper {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border: 1px solid #cd000f;
+}
+
+.section-topics .list-topics .item-topic:focus {
+    outline: none;
+}
+
+.section-topics .list-topics .flipper {
+    position: relative;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 20px;
+    width: 228px;
+    height: 427px;
+    border: 1px solid #3e3e3e;
+}
+
+.section-topics .list-topics .card-front,
+.section-topics .list-topics .card-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.section-topics .list-topics .card-front {
+    padding: 17px 25px;
+}
+
+.section-topics .list-topics .card-front img {
+    display: inline-block;
+}
+
+.section-topics .list-topics .card-front:before, .section-topics .list-topics .card-front:after {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    background: url("../Images/section-topics-card-k.png");
+}
+
+.section-topics .list-topics .card-front:before {
+    left: 17px;
+    top: 17px;
+}
+
+.section-topics .list-topics .card-front:after {
+    right: 17px;
+    bottom: 17px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.section-topics .list-topics .topic-title {
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-topics .list-topics .topic-title:after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 17px;
+    height: 3px;
+    background-color: #cd000f;
+}
+
+.section-topics .list-topics .topic-intro {
+    text-align: left;
+    color: #aaaaaa;
+    line-height: 1.7;
+}
+
+.section-topics .list-topics .card-back {
+    background-color: #000;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.section-topics .list-topics .card-back img {
+    position: absolute;
+    left: 11px;
+    top: 11px;
+}
+
+.section-topics .list-topics .author {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 30px;
+}
+
+.section-topics .list-topics .author .intro {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+.section-topics .list-topics .author .intro:before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.section-topics .list-topics-navs {
+    position: absolute;
+    text-align: right;
+    right: 60px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 30px;
+}
+
+.section-topics .list-topics-navs .position {
+    color: #cd000f;
+}
+
+.section-topics .list-topics-navs .arrows {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #585858;
+    cursor: pointer;
+}
+
+.section-topics .list-topics-navs .arrows:hover {
+    background: #cd000f;
+    border-color: #cd000f;
+}
+
+.section-topics .list-topics-navs .arrows:hover .fa {
+    color: #fff;
+}
+
+.section-topics .list-topics-navs .fa {
+    font-size: 30px;
+    color: #585858;
+}
+
+.section-topics .list-topics-navs .dots-wrapper {
+    position: relative;
+}
+
+.section-topics .list-topics-navs .dots-wrapper .slick-dots {
+    position: static;
+}
+
+.section-topics .list-topics-navs .dots-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+}
+
+.section-topics .list-topics-navs .dots-wrapper li {
+    float: left;
+    width: 42px;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.section-topics .list-topics-navs .dots-wrapper li.slick-active button {
+    background-color: #cd000f;
+}
+
+.section-topics .list-topics-navs .dots-wrapper li button {
+    height: 3px;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.section-topics .list-topics-navs .dots-wrapper li button:before {
+    display: none;
+}
+
+/* 大会日程、大会议题 样式 end */
+
+/*购票倒计时 样式 begin*/
+@font-face {
+    font-family: 'digital';
+    /*src: url('GraublauWeb.eot?') format('eot'), url('GraublauWeb.woff') format('woff'), url('../fonts/digital.ttf') format('truetype');*/
+    src: url('../fonts/digital.ttf') format('truetype');
+}
+
+.section-countdown {
+    background-image: url('../Images/bg-section-countdown.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section-countdown .countdown {
+    position: relative;
+    width: 972px;
+    height: 197px;
+    background-image: url('../Images/bg-countdown.png');
+    background-position: center;
+    margin: 0 auto;
+}
+
+.section-countdown .countdown .day,
+.section-countdown .countdown .hour,
+.section-countdown .countdown .minute,
+.section-countdown .countdown .second {
+    position: absolute;
+    /*width: 152px;*/
+    bottom: 9px;
+    font-size: 70px;
+    font-family: 'digital';
+    color: #cd0010;
+}
+
+.section-countdown .countdown span {
+    text-align: center;
+    float: left;
+    width: 70px;
+    margin-left: 12px;
+    /*border: 1px solid red;*/
+}
+
+.section-countdown .countdown .day {
+    left: -5px;
+}
+
+.section-countdown .countdown .hour {
+    left: 242px;
+}
+
+.section-countdown .countdown .minute {
+    left: 487px;
+}
+
+.section-countdown .countdown .second {
+    left: 746px;
+}
+
+/*购票倒计时 样式 end*/
+
+/*购票通道样式 begin*/
+.west-kcon .section-buy-tickets .content-wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.section-buy-tickets .choose-ticket {
+    float: left;
+    width: 750px;
+}
+
+.section-buy-tickets .tooltip-inner {
+    max-width: none;
+    word-break: keep-all;
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #cd0010;
+    color: #cd0010;
+}
+
+.purchase-selected .tooltip-inner {
+    width: 140px;
+}
+
+.section-buy-tickets .tooltip.top .tooltip-arrow {
+    border-top-color: #cd0010;
+}
+
+.conference-info {
+    width: 300px;
+    float: right;
+    border: 1px solid #e1e1e1;
+    padding: 20px 15px;
+}
+
+.conference-info dl {
+    border-bottom: 1px dashed #eee;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.conference-info dt {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.conference-info dd {
+    font-size: 12px;
+    color: #8f8f8f;
+}
+
+.conference-info .ul-gifts li {
+    float: left;
+    padding-right: 5px;
+    margin-bottom: 5px;
+
+}
+
+.conference-info .ul-gifts .fa {
+    width: 20px;
+    text-align: center;
+    vertical-align: 0px;
+}
+
+.conference-info .ul-tips {
+    padding-left: 20px;
+}
+
+.conference-info .ul-tips li {
+    margin-bottom: 5px;
+}
+
+.conference-info .notes {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.choose-ticket .middle-title {
+    border-left: 4px solid #cd0010;
+    padding-left: 12px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.choose-ticket .middle-title span {
+    color: #666666;
+    padding-left: 5px;
+}
+
+.choose-ticket .capital-ticket .ticket-co-wrapper {
+    position: absolute;
+    top: 24px;
+    /*transform: translateY(-50%);*/
+}
+
+.choose-ticket .ticket1 .ticket-co-wrapper {
+    top: 11px;
+}
+
+.choose-ticket .capital-ticket {
+    color: #8f8f8f;
+}
+
+.btn-pri {
+    width: 186px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #cd0010;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.btn-pri:hover {
+    color: #fff;
+    background-color: #ad0010;
+}
+
+/*购票通道样式 end*/
+
+@media (max-width: 1500px) {
+    .section-topics .list-topics .card-front {
+        padding: 17px 13px;
+    }
+}
