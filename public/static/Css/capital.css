@@ -15,7 +15,8 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 .i-more { width: 26px; height: 26px; background-image: url(../Images/i-more.png); }
 .bt { display: inline-block; vertical-align: middle; text-align: center; cursor: pointer; }
 .bt-buy, .bt-buy:before, .bt-buy:after { border-radius: 50%; transition: all 0.3s; -webkit-transition: all 0.3s; }
-.bt-buy { height: 86px; width: 86px; border: 1px solid #d80c20; position: relative; color: #d80c20; line-height: 1; }
+.bt-buy a:hover,.bt a:hover { color: #0c0a00; }
+.bt-buy { height: 86px; width: 86px; border: 1px solid #d80c20; position: relative; color: #0c0a00; line-height: 1; }
 .bt-buy:before, .bt-buy:after { content: ""; position: absolute; top: 50%; left: 50%; }
 .bt-buy:before { height: 100px; width: 100px; margin: -50px 0 0 -50px; border: 1px solid rgba(219,12,34,0.6); }
 .bt-buy:after { height: 128px; width: 128px; margin: -64px 0 0 -64px; border: 1px solid rgba(219,12,34,0.2); }
@@ -23,7 +24,7 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 .bt-buy:hover:before { height: 86px; width: 86px; margin: -43px 0 0 -43px; opacity: 0; }
 .bt-buy i { margin-top: 20px; width: 21px; height: 14px; background-image: url(../Images/bt-buy.png); }
 .bt-buy strong { position: absolute; bottom: 20px; left: 0; width: 100%; }
-.copyright { color: #aaa; }
+.copyright { color: #0c0a00; }
 .menu { font-size: 0; text-align: center; white-space: nowrap; }
 .menu button, a { display: inline-block; font-size: 14px; color: #0c0a00; height: 60px; line-height: 60px; vertical-align: middle; }
 .menu button { position: relative; width: 60px; background-color: #cd000f; border: 1px solid #cd000f; overflow: hidden; }
