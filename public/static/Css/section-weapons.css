@@ -1,1 +1,260 @@
-﻿.section-weapons{background-image:url(../Images/1.jpg);background-size:cover;background-position:50%}.section-weapons .section-weapons-title{margin-top:-200px}.list-weapon{width:1020px;margin:143px auto 0;list-style:none;padding-left:0}.list-weapon .weapon-item{position:relative;float:left;width:245px;height:245px;margin:5px;box-shadow:0 0 0 0 rgba(205,0,15,.13);-webkit-transition:box-shadow .2s;transition:box-shadow .2s;cursor:pointer}.list-weapon .weapon-item:hover{box-shadow:0 0 18px 0 rgba(205,0,15,.13)}.list-weapon .weapon-item:hover .arrow{background:url(../Images/arrow-right.png)}.list-weapon .weapon-item:focus{outline:none}.list-weapon .arrow{position:relative;display:inline-block;width:19px;height:13px}.list-weapon .arrow:before{content:'';position:absolute;left:0;top:5px;width:15px;height:3px;background-color:#cd000f}.list-weapon .name{font-size:28px;font-weight:700;color:#cd000f}.list-weapon .organ{font-size:16px;color:#666}.list-weapon .des-wrapper{position:absolute;bottom:25px;left:20px;right:20px}.list-weapon .knight{position:absolute;top:20px;right:20px}.list-weapon .slick-dots li{margin:0 3px;width:auto}.list-weapon .slick-dots li button{width:30px;height:3px;margin-top:8px;padding:0;background-color:#aaa;-webkit-transition:width .2s;transition:width .2s}.list-weapon .slick-dots li button:before{display:none}.list-weapon .slick-dots li.slick-active button{width:64px;background-color:#cd000f}.fullpage-dot-indicator{display:none}.weapon-info-wrapper{position:absolute;top:0;bottom:0;right:-960px;width:960px;padding-left:73px;background-color:#111;-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s}.weapon-info-wrapper.active{-webkit-transform:translateX(-960px);transform:translateX(-960px)}.weapon-info-wrapper .fa-times{position:absolute;font-size:30px;top:4%;left:73px;color:#888;cursor:pointer}.weapon-info-wrapper .fa-times:hover{color:#cd000f}.weapon-info-wrapper .list-weapon-info-nav{position:absolute;right:50px;top:4%}.weapon-info-wrapper .list-weapon-info-nav .arrow{width:34px;height:34px;border:1px solid #666;text-align:center;line-height:34px;margin-bottom:5px;cursor:pointer}.weapon-info-wrapper .list-weapon-info-nav .arrow .fa{font-size:26px;color:#aaa;vertical-align:middle}.weapon-info-wrapper .list-weapon-info-nav .arrow:hover{border-color:#cd000f;background-color:#cd000f}.weapon-info-wrapper .list-weapon-info-nav .arrow:hover .fa{color:#fff}.weapon-info-wrapper .list-weapon-info{width:790px;margin-top:10%;padding-left:0}.weapon-info-wrapper .item{position:relative;margin:5px 30px 5px 0;border:1px solid transparent;padding:0 60px 20px 46px;-webkit-transition:border-color .2s;transition:border-color .2s}.weapon-info-wrapper .item:focus{outline:none}.weapon-info-wrapper .item.slick-current,.weapon-info-wrapper .item:hover{border-color:#cd000f}.weapon-info-wrapper .item.slick-current .name,.weapon-info-wrapper .item:hover .name{color:#cd000f}.weapon-info-wrapper .item.slick-current .link,.weapon-info-wrapper .item:hover .link{opacity:1}.weapon-info-wrapper .link{opacity:0;position:absolute;right:-26px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:52px;height:52px;line-height:50px;background-color:#cd000f;text-align:center;box-shadow:0 0 0 10px #111;-webkit-transition:opacity .2s;transition:opacity .2s}.weapon-info-wrapper .link:hover{background-color:#ff0114}.weapon-info-wrapper .link img{display:inline-block;vertical-align:middle}.weapon-info-wrapper .name{font-size:34px;color:#fff;font-weight:400}.weapon-info-wrapper .organ{font-size:14px;color:#ddd}.weapon-info-wrapper .organ:after{content:'';display:block;width:22px;height:4px;margin:17px 0;background-color:#cd000f}.weapon-info-wrapper .info{font-size:14px;color:#aaa;line-height:1.5}.weapon-info-wrapper .info b{color:#fff;font-weight:400}
+﻿.section-weapons {
+    background-image: url(../Images/1.jpg);
+    background-size: cover;
+    background-position: 50%
+}
+
+.section-weapons .section-weapons-title {
+    margin-top: -200px
+}
+
+.list-weapon {
+    width: 1020px;
+    margin: 143px auto 0;
+    list-style: none;
+    padding-left: 0
+}
+
+.list-weapon .weapon-item {
+    position: relative;
+    float: left;
+    width: 245px;
+    height: 245px;
+    margin: 5px;
+    box-shadow: 0 0 0 0 rgba(205, 0, 15, .13);
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    cursor: pointer
+}
+
+.list-weapon .weapon-item:hover {
+    box-shadow: 0 0 18px 0 rgba(205, 0, 15, .13)
+}
+
+.list-weapon .weapon-item:hover .arrow {
+    background: url(../Images/arrow-right.png)
+}
+
+.list-weapon .weapon-item:focus {
+    outline: none
+}
+
+.list-weapon .arrow {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 13px
+}
+
+.list-weapon .arrow:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 3px;
+    background-color: #cd000f
+}
+
+.list-weapon .name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #cd000f
+}
+
+.list-weapon .organ {
+    font-size: 16px;
+    color: #666
+}
+
+.list-weapon .des-wrapper {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px
+}
+
+.list-weapon .knight {
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.list-weapon .slick-dots li {
+    margin: 0 3px;
+    width: auto
+}
+
+.list-weapon .slick-dots li button {
+    width: 30px;
+    height: 3px;
+    margin-top: 8px;
+    padding: 0;
+    background-color: #aaa;
+    -webkit-transition: width .2s;
+    transition: width .2s
+}
+
+.list-weapon .slick-dots li button:before {
+    display: none
+}
+
+.list-weapon .slick-dots li.slick-active button {
+    width: 64px;
+    background-color: #cd000f
+}
+
+.fullpage-dot-indicator {
+    display: none
+}
+
+.weapon-info-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -960px;
+    width: 960px;
+    padding-left: 73px;
+    background-color: #111;
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s
+}
+
+.weapon-info-wrapper.active {
+    -webkit-transform: translateX(-960px);
+    transform: translateX(-960px)
+}
+
+.weapon-info-wrapper .fa-times {
+    position: absolute;
+    font-size: 30px;
+    top: 4%;
+    left: 73px;
+    color: #888;
+    cursor: pointer
+}
+
+.weapon-info-wrapper .fa-times:hover {
+    color: #cd000f
+}
+
+.weapon-info-wrapper .list-weapon-info-nav {
+    position: absolute;
+    right: 50px;
+    top: 4%
+}
+
+.weapon-info-wrapper .list-weapon-info-nav .arrow {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+.weapon-info-wrapper .list-weapon-info-nav .arrow .fa {
+    font-size: 26px;
+    color: #aaa;
+    vertical-align: middle
+}
+
+.weapon-info-wrapper .list-weapon-info-nav .arrow:hover {
+    border-color: #cd000f;
+    background-color: #cd000f
+}
+
+.weapon-info-wrapper .list-weapon-info-nav .arrow:hover .fa {
+    color: #fff
+}
+
+.weapon-info-wrapper .list-weapon-info {
+    width: 790px;
+    margin-top: 10%;
+    padding-left: 0
+}
+
+.weapon-info-wrapper .item {
+    position: relative;
+    margin: 5px 30px 5px 0;
+    border: 1px solid transparent;
+    padding: 0 60px 20px 46px;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s
+}
+
+.weapon-info-wrapper .item:focus {
+    outline: none
+}
+
+.weapon-info-wrapper .item.slick-current, .weapon-info-wrapper .item:hover {
+    border-color: #cd000f
+}
+
+.weapon-info-wrapper .item.slick-current .name, .weapon-info-wrapper .item:hover .name {
+    color: #cd000f
+}
+
+.weapon-info-wrapper .item.slick-current .link, .weapon-info-wrapper .item:hover .link {
+    opacity: 1
+}
+
+.weapon-info-wrapper .link {
+    opacity: 0;
+    position: absolute;
+    right: -26px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    line-height: 50px;
+    background-color: #cd000f;
+    text-align: center;
+    box-shadow: 0 0 0 10px #111;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s
+}
+
+.weapon-info-wrapper .link:hover {
+    background-color: #ff0114
+}
+
+.weapon-info-wrapper .link img {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.weapon-info-wrapper .name {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 400
+}
+
+.weapon-info-wrapper .organ {
+    font-size: 14px;
+    color: #ddd
+}
+
+.weapon-info-wrapper .organ:after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 4px;
+    margin: 17px 0;
+    background-color: #cd000f
+}
+
+.weapon-info-wrapper .info {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5
+}
+
+.weapon-info-wrapper .info b {
+    color: #fff;
+    font-weight: 400
+}
