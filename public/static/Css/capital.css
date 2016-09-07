@@ -80,11 +80,11 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 .contact-me_undersocre { margin: 10px 0; }
 .cm_ra_title, .cm_ths_cw_title, .cm_ths_recruit_title { color: #CD000F; font-size: 16px; font-weight: bold; }
 .cm_ths_contact_way, .cm_ths_recruit { float: left; margin-right: 105px; }
-.cm_ths_follow_me { float: right; }
+.cm_ths_follow_me { float: left;}
 .cm_ths_recruit_content p span:hover { color: #CD000F; cursor: pointer; }
 .cm_ths_recruit_content p span:first-child { margin-right: 43px; }
 .con-me_others:after { content: ''; display: block; height: 0; clear: both; }
-.cm_ths_follow_me { float: right; height: 94px; line-height: 94px; }
+.cm_ths_follow_me { float: left; height: 94px; line-height: 94px; width: 100%; text-align: center;}
 .cm_ths_follow_me a { position: relative; margin: 0 20px; }
 .cm_ths_follow_me a i { content: ''; position: absolute; top: 50%; left: 50%; cursor: pointer; height: 0; width: 0; border-radius: 50%; border: 1px solid #CD000F; visibility: hidden; transition: all 0.3s; -webkit-transition: all 0.3s; }
 .cm_ths_follow_me a:hover i { visibility: visible; width: 94px; height: 94px; margin: -47px 0 0 -47px; }
