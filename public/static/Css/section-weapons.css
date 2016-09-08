@@ -1,4 +1,19 @@
-﻿.section-weapons {
+﻿@font-face {font-family: "iconfont";
+    src: url('../font/iconfont.eot?t=1473341452'); /* IE9*/
+    src: url('../font/iconfont.eot?t=1473341452#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff?t=1473341452') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf?t=1473341452') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg?t=1473341452#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.section-weapons {
     background-image: url(../Images/1.jpg);
     background-size: cover;
     background-position: 50%
@@ -34,7 +49,10 @@
 .list-weapon .weapon-item:hover .arrow {
     background: url(../Images/arrow-right.png)
 }
-
+.weapon-item .knight{
+    width: 230px;
+    height: 245px;
+}
 .list-weapon .weapon-item:focus {
     outline: none
 }
@@ -44,13 +62,14 @@
     display: inline-block;
     width: 19px;
     height: 13px
+
 }
 
 .list-weapon .arrow:before {
     content: '';
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 15px;
     width: 15px;
     height: 3px;
     background-color: #cd000f
@@ -143,7 +162,7 @@
 .weapon-info-wrapper .list-weapon-info-nav {
     position: absolute;
     right: 50px;
-    top: 4%
+    top: 50%
 }
 
 .weapon-info-wrapper .list-weapon-info-nav .arrow {
