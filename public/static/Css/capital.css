@@ -379,7 +379,6 @@ i {
 }
 
 /*第四屏*/
-<<<<<<< HEAD
 .section-partner{ padding-top: 0; }
 .w50p{ width: 50%; }
 .mb30{ margin-bottom: 20px; }
@@ -390,7 +389,7 @@ i {
 .i-partners{  margin: 0 -4px; }
 .i-partner{ margin: 4px 4px 80px 4px; width: 200px; }
 .i-partner{ display: inline-block;}
-=======
+
 .section-partner {
     padding-top: 0;
 }
@@ -447,9 +446,8 @@ i {
     background-color: #fff;
 }
 
->>>>>>> origin/master
 /*联系我们*/
-<<<<<<< HEAD
+
 .section-contact { background: #000 url(../Images/bg.jpg) center top no-repeat; }
 .contact-me { margin: 0 auto; max-width: 980px; color: #fff; font-size: 14px; margin-top: 5%; }
 .contact-me p { margin-bottom: 0; line-height: 1.8; }
