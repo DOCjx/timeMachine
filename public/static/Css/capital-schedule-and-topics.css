@@ -37,14 +37,6 @@
     transition: margin-right .2s;
 }
 
-.i-partners .i-partner {
-    text-align: center;
-}
-
-.i-partners .i-partner img {
-    display: inline-block;
-}
-
 .menu button:focus {
     outline: none;
 }
