@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理用户</title>
+	<link href="/timeMachine/public/static/Css/admin.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<nav>
+		<img src="/timeMachine/public/static/Images/logo.png" style="margin-left:10px;margin-top:2.5px;float:left;width:55px;height:55px;" alt="logo">
+		<ul>
+			<li><a href="{:url('home/Index/index','')}">首页</a></li>
+			<li><a href="{:url('Index/index','')}">管理用户</a></li>
+		</ul>
+		<div id="top">
+			<font>欢迎你{$userName}!</font>
+		</div>
+	</nav>
+	<table>
+	    <tr class="first">
+	    	<td>账户ID</td>
+	    	<td>账号</td>
+	    	<td>昵称</td>
+	    	<td>密码</td>
+	    	<td>性别</td>
+	    	<td>QQ号码</td>
+	    	<td>手机号码</td>
+	    	<td>注册时间</td>
+	    	<td>最后登录时间</td>
+	    	<td>权限</td>
+	    	<td>操作</td>
+	    </tr>
+		{volist name="userInfo" id="userInfoDetail"}
+			<tr>
+				<td>{$userInfoDetail['id']}</td>
+				<td><a href="{:url('Index/detail',['editDataId'=>$userInfoDetail['user_num'],'flag'=>'1'])}">{$userInfoDetail['user_num']}</a></td>
+				<td>{$userInfoDetail['nick_name']}</td>
+				<td>{$userInfoDetail['psd']}</td>
+				<td>{$userInfoDetail['sex']}</td>
+				<td>{$userInfoDetail['qq']}</td>
+				<td>{$userInfoDetail['phone']}</td>
+				<td>{$userInfoDetail['login_time']|date='Y-m-d H:i',###}</td>
+				<td>{$userInfoDetail['login_last_time']|date='Y-m-d H:i',###}</td>
+				<td>{$userInfoDetail['status']}</td>
+				<td><a href="{:url('Index/editUser',['editUserId'=>$userInfoDetail['id'],'flag'=>'1'])}">修改&nbsp;&nbsp;</a><a href="{:url('Index/delUser',['editUserId'=>$userInfoDetail['id'],'flag'=>'1'])}">删除</a></td>
+			</tr>
+		{/volist}
+		<form action="addUser" method="post">
+			<tr>
+				<td><input type="number"  required="required" name="id" "></td>
+				<td><input type="number" required="required" name="user_num" "></td>
+				<td><input type="text" required="required" name="nick_name" "></td>
+				<td><input type="text" required="required" name="psd" "></td>
+				<td>
+					<select name="sex">
+						<option value="男">男</option>
+						<option value="女">女</option>
+						<option value="保密">保密</option>
+					</select>
+				</td>
+				<td><input type="text" required="required" name="qq" "></td><td><input type="text" required="required" name="phone" "></td>
+				<td></td>
+				<td></td>
+				<td><input type="number" name="status" min="0" max="2" "></td>
+				<td><input type="submit" value="增加用户"></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

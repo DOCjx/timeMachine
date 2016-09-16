@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital-schedule-and-topics.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/section-weapons.css">
-
+    <link rel="stylesheet" href="/timeMachine/public/static/Animate/animate.min.css">
     <script src="/timeMachine/public/static/Scripts/modernizr.js"></script>
     <!-- <script>
         var _hmt = _hmt || [];
@@ -66,7 +66,9 @@
 <div id="fullpage" class="west-kcon">
     <!--首屏 begin-->
     <div class="section section-index capital-index">
-        <div class="blackBload">
+        
+        <div class="pb"></div>
+        <div class="p1Content">
             <div class="p1-txt">
               <span>管中窥豹，赏心悦目<a href="#p1o1" class="i-more p1-more" title="more"></a></span>
               <div>
@@ -75,7 +77,6 @@
                 <strong>坐标：天空</strong>
               </div>
             </div>
-
             <div class="p1-txt">
               <span>独乐乐，不如众乐乐<a href="#p1o2" class="i-more p1-more" title="more"></a></span>
               <div>
@@ -84,7 +85,6 @@
                 <strong>坐标：网络</strong>
               </div>
             </div>
-
             <div class="p1-txt">
               <span>促膝长谈，帮你发声<a href="#p1o3" class="i-more p1-more" title="more"></a></span>
               <div>
@@ -112,9 +112,6 @@
             </div>
             <a href="javascript:;" class="s_close"></a>
         </div>
-        
-
-
         <div class="set-top-left">
             <div class="menu off trans">
               <button type="button"><i>展开</i></button>
@@ -127,7 +124,69 @@
         </div>
 <div class="set-top-right">
   <i class="i-logo"></i>
+  {empty name="nick_name"}<br/><button class="btn btn-xs" id="login">登录/注册</button>{else /} <p style="font-size:18px;">欢迎<strong>{:$nick_name}</strong></p>{empty name="hasIndex"}<a href="{:url('/index.php/admin/Index/index')}">{else /}<a href="{:url('admin/Index/index')}">{/empty}个人中心</a>&nbsp;&nbsp;<a href="{:url('Index/logout')}">退出</a>{/empty}
 </div>
+
+
+<div id="login-box">
+        <div id="login-back"></div>
+        <div id="login-content">
+            <div class="login-box-header">
+                <span>登录你的时光机</span><button class="btn close">×</button>
+            </div>
+            <form action="{empty name="hasIndex"}{:url('/index.php/home/index/login')}{else /}{:url('index/login')}{/empty}" method="post" id="login-form">
+                <div class="input-group">
+                  <span class="input-group-addon">学号：</span>
+                  <input type="text" required="required" class="form-control" name="user_num" placeholder="含20">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">密码：</span>
+                  <input type="password" required="required" class="form-control" name="psd" placeholder="密码">
+                </div>
+                <div class="input-group">
+                  <input type="submit" required="required" value="登录" class="btn sub" name="sub">
+                </div>
+                <span class="sign">还没账号<a href="javascript:;">注册</a></span>
+            </form>
+            <form action="{empty name="hasIndex"}{:url('/index.php/home/index/sign')}{else /}{:url('index/sign')}{/empty}" id="sign-form" method="post">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon input-group-sm">学号：</span>
+                  <input type="text" required="required" class="form-control" name="user_num" placeholder="含20">
+                </div>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">昵称：</span>
+                  <input type="text" class="form-control" required="required" name="nick_name" placeholder="昵称">
+                </div>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">密码：</span>
+                  <input type="password" required="required" class="form-control" name="psd">
+                </div>
+                <div class="input-group input-group-sm sex">
+                  <span class="input-group-addon">性别：</span>
+                  <input type="radio" name="sex" value="男">男
+                  <input type="radio" name="sex" value="女">女
+                  <input type="radio" name="sex" value="保密">保密
+                </div>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">QQ：</span>
+                  <input type="text" class="form-control" required="required" name="qq">
+                </div>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">PHONE</span>
+                  <input type="text" class="form-control" required="required" name="phone">
+                </div>
+                <div class="input-group">
+                  <input type="submit" required="required" value="注册" class="btn sub" name="sub">
+                </div>
+                <span class="sign">已有账号<a href="javascript:;">登录</a></span>
+            </form>
+            <div class="login-box-footer">
+                分享你的曾经，帮助TA的现在！
+            </div>
+        </div>
+</div>
+
+
 <div class="sec-foot-left">
     <div class="copyright">Copyright © 宏奕工作室ABC组</div>
 </div>
@@ -244,6 +303,50 @@
 
     $('[data-toggle="tooltip"]').tooltip();
 
+
+
+    function setAnim(tag, action) {
+        $(tag).removeClass().addClass(action + ' animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass();
+        });
+    };
+    $('#login').click(function(){
+        $('#login-box').css('display','block');
+        setTimeout(function () {
+            $('#login-content').css('display','block');
+           setAnim("#login-content","fadeInDown");
+        }, 200);
+    });
+    $('#login-back').click(function(){
+        $('#login-box').css('display','none');
+    });
+    $('.close').click(function(){
+        $('#login-box').css('display','none');
+    });
+    $('#login-form a').click(function(){
+        setAnim("#login-form","rollOut");
+        $('.login-box-header span').html('注册你的时光机');
+        setTimeout(function () {
+            $('#login-form').css('display','none');
+        }, 600);
+        setTimeout(function () {
+            $('#sign-form').css('display','block');
+            setAnim("#sign-form","bounceInDown");
+            $('#login-form').attr('class','');
+        }, 600);
+    });
+    $('#sign-form a').click(function(){
+        setAnim("#sign-form","rollOut");
+        $('.login-box-header span').html('登录你的时光机');
+        setTimeout(function () {
+            $('#sign-form').css('display','none');
+        }, 600);
+        setTimeout(function () {
+            $('#login-form').css('display','block');
+            setAnim("#login-form","bounceInDown");
+            $('#sign-form').attr('class','');
+        }, 600);
+    });
 </script>
 
 

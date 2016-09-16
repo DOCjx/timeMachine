@@ -83,11 +83,11 @@ return [
     // URL伪静态后缀
     'url_html_suffix'        => 'html',
     // URL普通方式参数 用于自动生成
-    'url_common_param'       => false,
+    'url_common_param'       => true,
     // URL参数方式 0 按名称成对解析 1 按顺序解析
     'url_param_type'         => 0,
     // 是否开启路由
-    'url_route_on'           => true,
+    'url_route_on'           => false,
     // 是否强制使用路由
     'url_route_must'         => false,
     // 域名部署

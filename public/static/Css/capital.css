@@ -2,7 +2,107 @@
     font-size: 12px;
     overflow-x: hidden;
 }
+.sex input{
+    margin-left: 10px;
+}
+.sex{
+    text-align: center;
+    line-height: 30px;
+}
+#sign-form{
+    display: none;
+    width: 300px;
+    height: 200xp;
+    margin: auto;
+}
+.sub{
+    width: 300px;
+}
+.login-box-footer{
+    position: absolute;
+    top: 450px;
+    height: 100px;
+    width: 498px;
+    line-height: 100px;
+    border-top: 2px solid #bababa;
+    text-align: center;
+}
+.input-group{
+    margin-top: 20px;
+}
+.input-group-addon,.form-control{
+    height: 30px;
+}
+#login-form .sign a,#sign-form .sign a{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+#login-form .sign,#sign-form .sign{
+    height: 40px;
+    line-height: 40px;
+    float: right;
+}
+#login-form{
+    // display: none;
+    width: 300px;
+    height: 200xp;
+    margin: 90px auto;
+}
+.login-box-header{
+    text-align: center;
+    color: #0c0a00;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.login-box-header button{
+    float: right;
+    margin-right: 10px;
+}
+.login-box-header button:hover{
+    background-color: #d80c20; 
+}
+#login-content{
+    display: none;
+    position: relative;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    border: 1px solid #d80c20;
+    background-color: white;
+}
+#login-box{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#login-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.6;
+    filter: alpha(opacity=60%);
+}
+.p1Content{
+    position: relative;
+    width: 100%;
+    top: -230px;
+}
+.pb{
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50%);
+    margin: auto;
 
+}
 .set-top-left {
     position: absolute;
     left: 3%;
@@ -262,7 +362,7 @@ i {
     float: left;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: #0c0a00;
     margin-top: 14px;
 }
 
@@ -914,7 +1014,7 @@ i {
 
 .capital-fullpage-dot-indicator {
     position: fixed;
-    z-index: 8;
+    z-index: 1;
     top: 50%;
     /*right:80px;*/
     height: 135px;

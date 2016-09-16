@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>编辑用户</title>
+	<link href="/timeMachine/public/static/Css/admin.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<nav>
+		<img src="/timeMachine/public/static/Images/logo.png" style="margin-left:10px;margin-top:2.5px;float:left;width:55px;height:55px;" alt="logo">
+		<ul>
+			<li><a href="{:url('Home/Index/index')}">首页</a></li>
+			<li>{empty name="flag"}<a href="#">管理用户</a>{else /}<a href="{:url('Index/index')}">管理用户</a>{/empty}</li>
+		</ul>
+		<div id="top">
+			<font>欢迎你{$userName}!</font>
+		</div>
+	</nav>
+	<form action="{:url('Index/updataUser')}" method="post">
+		<table>
+		    <tr class="first">
+		    	<td>账户ID</td>
+		    	<td>账号</td>
+		    	<td>昵称</td>
+		    	<td>密码</td>
+		    	<td>性别</td>
+		    	<td>QQ号码</td>
+		    	<td>手机号码</td>
+		    	<td>注册时间</td>
+		    	<td>最后登录时间</td>
+		    	<td>权限</td>
+		    	<td>操作</td>
+		    </tr>
+			<tr>
+				<td>{$userInfo['id']}</td>
+				<td><input type="number" required="required" name="user_num" value="{$userInfo['user_num']}"></td>
+				<td><input type="text" required="required" name="nick_name" value="{$userInfo['nick_name']}"></td>
+				<td><input type="text" required="required" name="psd" value="{$userInfo['psd']}"></td>
+				<td><input type="text" name="sex" value="{$userInfo['sex']}"></td>
+				<td><input type="text" required="required" name="qq" value="{$userInfo['qq']}"></td>
+				<td><input type="text" required="required" name="phone" value="{$userInfo['phone']}"></td>
+				<td>{$userInfo['login_time']|date='Y-m-d H:i',###}</td>
+				<td>{$userInfo['login_last_time']|date='Y-m-d H:i',###}</td>
+				<td>{empty name="flag"}{$userInfo['status']}{else /}<input type="number" name="status" value="{$userInfo['status']}"  min="0" max="2" >{/empty}</td>
+				<td><input type="submit" value="确认修改"></td>
+			</tr>
+		</table>
+		<input type="hidden" name="editUserId" value="{$userInfo['id']}">
+	</form>
+</body>
+</html>
