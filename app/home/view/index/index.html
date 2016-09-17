@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital-schedule-and-topics.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/section-weapons.css">
-    <link rel="stylesheet" href="/timeMachine/public/static/Bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/timeMachine/public/static/Bootstrap/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="/timeMachine/public/static/Css/tickets.css">
 
     <link rel="stylesheet" href="/timeMachine/public/static/Animate/animate.min.css">
@@ -97,7 +96,9 @@
                 <strong>坐标：心底</strong>
               </div>
             </div>
+
         </div>
+
         <div id="p1o1" class="p1-o p1-o2 trans">
             <div class="s_in">
                <p>校园美景一览，先骕、惟义和名达大楼的故事。还有勤人坡上的人儿！</p>
@@ -276,7 +277,6 @@
     $('.capital-index').click(function () {
         $('.p1-o').removeClass('on');
     });
-    
 
 
 
@@ -294,9 +294,11 @@
     });
     $('#login-back').click(function(){
         $('#login-box').css('display','none');
+        $('#login-content').css('display','none');
     });
     $('.close').click(function(){
         $('#login-box').css('display','none');
+        $('#login-content').css('display','none');
     });
     $('#login-form a').click(function(){
         setAnim("#login-form","rollOut");

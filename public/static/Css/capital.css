@@ -355,6 +355,45 @@ i {
     opacity: 0;
     margin-left: -10px;
 }
+.set-top-left { position: absolute; left: 3%; top: 3%; }
+.set-top-right { position: absolute; right: 3%; top: 3%; }
+.sec-foot-left { position: absolute; left: 3%; bottom: 4%; }
+.set-foot-right { position: absolute; right: 3%; bottom: 4%; }
+.capital-index { background:#000 url(../Images/bg2.jpg) center center no-repeat; }
+.pc { position: absolute; top: 50%; left: 50%; }
+.trans { transition: all 0.3s; -webkit-transition: all 0.3s; }
+i { display: inline-block; vertical-align: middle; background-repeat: no-repeat; font-weight: normal; }
+.i-logo { width: 87px; height: 87px; background-image: url(../Images/logo.png); }
+.i-logo-gray { width: 87px; height: 87px; background-image: url(../Images/logo-gray.png); }
+.i-more { width: 26px; height: 26px; background-image: url(../Images/i-more.png); }
+.bt { display: inline-block; vertical-align: middle; text-align: center; cursor: pointer; }
+.bt-buy, .bt-buy:before, .bt-buy:after { border-radius: 50%; transition: all 0.3s; -webkit-transition: all 0.3s; }
+.bt-buy { height: 86px; width: 86px; border: 1px solid #d80c20; position: relative; color: #d80c20; line-height: 1; }
+.bt-buy:before, .bt-buy:after { content: ""; position: absolute; top: 50%; left: 50%; }
+.bt-buy:before { height: 100px; width: 100px; margin: -50px 0 0 -50px; border: 1px solid rgba(219,12,34,0.6); }
+.bt-buy:after { height: 128px; width: 128px; margin: -64px 0 0 -64px; border: 1px solid rgba(219,12,34,0.2); }
+.bt-buy:hover:after { height: 100px; width: 100px; margin: -50px 0 0 -50px; opacity: 0; }
+.bt-buy:hover:before { height: 86px; width: 86px; margin: -43px 0 0 -43px; opacity: 0; }
+.bt-buy i { margin-top: 20px; width: 21px; height: 14px; background-image: url(../Images/bt-buy.png); }
+.bt-buy strong { position: absolute; bottom: 20px; left: 0; width: 100%; }
+.copyright { color: #aaa; }
+.menu { font-size: 0; text-align: center; white-space: nowrap; }
+.menu button, a { display: inline-block; font-size: 14px; color: #0c0a00; height: 60px; line-height: 60px; vertical-align: middle; }
+.menu button { position: relative; width: 60px; background-color: #cd000f; border: 1px solid #cd000f; overflow: hidden; }
+.menu button:active { background-color: #330e11; }
+.menu button i { position: relative; width: 12px; height: 9px; position: absolute; top: 50%; left: 50%; margin: -4px 0 0 -6px; line-height: 200px; overflow: hidden; border:solid #0c0a00; border-width: 1px 0 1px 0;  vertical-align: top; }
+.menu button i:before{ content: ""; position: absolute; top:50%;  left: 0; width: 100%; border-top: 1px solid #0c0a00; }
+.menu a { border: 1px solid transparent;border-radius: 50%; padding: 0 2em; margin: 0 5px; transition: all 0.3s; -webkit-transition: all 0.3s; }
+.menu a:hover { color: #0c0a00; }
+.menu a.active, .menu a:hover { border-color: #cd000f; }
+.menu-dark a, .menu-dark a:hover{ color:#333; }
+.menu-dark.off button i { border-color: #333; }
+.menu-dark.off button i:before{ border-top: 1px solid #333; }
+.menu.off button { background-color: transparent; border-width: 1px 0 0 1px; }
+.menu.off button:before { content: ""; position: absolute; top: -17px; left: 50%; height: 89px; border-left: 1px solid #cd000f; transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+.menu.off button i { margin: -13px 0 0 -18px; }
+.menu.off button i:before{ margin-top: -1px; }
+.menu.off a { visibility: hidden; opacity: 0; margin-left: -10px; }
 
 /*第一屏*/
 .p1-txt {
