@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改记录</title>
+	<link href="__PUBLIC__/assets/global/css/admin.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<nav>
+		<img src="__PUBLIC__/assets/global/img/logo.png" style="margin-left:10px;margin-top:2.5px;float:left;width:55px;height:55px;" alt="logo">
+		<ul>
+			<li><a href="{:U('Home/Index/index')}">首页</a></li>
+			<li><a href="{:U('Index/index')}">管理用户</a></li>
+		</ul>
+		<div id="top">
+			<font>欢迎你{$userName}!</font>
+		</div>
+	</nav>
+	<table>
+	    <tr class="first">
+	    	<td>游戏名称</td>
+	    	<td>时间</td>
+	    	<td>结果</td>
+	    	<td>次数</td>
+	    	<td>状态</td>
+	    	<td>操作</td>
+	    </tr>
+		<volist name="data" id="dataDetail">
+			<tr>
+				<td>{$dataDetail['game_name']}</td>
+				<td>{$dataDetail['updata_time']|date='Y-m-d H:i',###}</td>
+				<td>{$dataDetail['result']}</td>
+				<td>{$dataDetail['times']}</td>
+				<td>{$dataDetail['status']}</td>
+				<td>
+					<a href="{:U('Index/doData',array('id'=>$dataDetail['id'],'status'=>'0'))}"><span style="">删除</span></a>
+					<a href="{:U('Index/doData',array('id'=>$dataDetail['id'],'status'=>'1'))}"><span style="">恢复</span></a>
+					<a href="{:U('Index/doData',array('id'=>$dataDetail['id'],'status'=>'-1'))}"><span style="">彻底删除</span></a>
+				</td>
+			</tr>
+		</volist>
+	</table>
+	<div id="footer">{$page}</div>
+</body>
+</html>
