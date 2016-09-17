@@ -20,14 +20,9 @@
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital-schedule-and-topics.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/section-weapons.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/timeMachine/public/static/Bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/timeMachine/public/static/Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/timeMachine/public/static/Css/tickets.css">
 
-=======
+    <link rel="stylesheet" href="/timeMachine/public/static/Css/tickets.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Animate/animate.min.css">
->>>>>>> origin/master
     <script src="/timeMachine/public/static/Scripts/modernizr.js"></script>
     <!-- <script>
         var _hmt = _hmt || [];
@@ -100,7 +95,9 @@
                 <strong>坐标：心底</strong>
               </div>
             </div>
+
         </div>
+
         <div id="p1o1" class="p1-o p1-o2 trans">
             <div class="s_in">
                <p>校园美景一览，先骕、惟义和名达大楼的故事。还有勤人坡上的人儿！</p>
@@ -286,33 +283,7 @@
         adaptiveHeight: true
     });
 
-    var $jCounter=$('.j-counter');
-    var $jCounterInput=$jCounter.find('input');
-
-    $jCounter.counter();
-    // 门票张数
-    $jCounterInput.keyup(function (event) {
-        this.value = this.value.replace(/[^0-9]/g, '');
-        var $input = $(this);
-        var max = parseInt($input.data('max'));
-        var min = parseInt($input.data('min'));
-
-        if (this.value.length > 0) {
-            if (parseInt(this.value) > max) {
-                $input.val(max);
-            }
-            if (parseInt(this.value) < min) {
-                $input.val(min);
-            }
-            $("#ticket_number").val($input.val());
-        }
-    });
-
-    $jCounter.on('click', 'span', function (e) {
-        $("#ticket_number").val($('.j-counter').find('input').val());
-    });
-
-    $('[data-toggle="tooltip"]').tooltip();
+    
 
 
 

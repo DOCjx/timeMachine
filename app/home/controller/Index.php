@@ -3,13 +3,10 @@ namespace app\home\controller;
 
 use think\Controller;
 use think\Db;
-<<<<<<< HEAD
 use think\View;
 use app\home\model\Ticket;
-=======
 use think\Request;
 use app\admin\model\User;
->>>>>>> origin/master
 
 class Index extends base
 {
@@ -18,30 +15,6 @@ class Index extends base
     }
     public function index()
     {
-<<<<<<< HEAD
-        // $this->assign('name', $name);
-        // return $this->fetch();
-        // return __DIR__.'/thinkphp/start.php';
-    	// $data = Db::name('user')->select();
-     //    $this->assign('result', $data);
-     //    var_dump($data);
-     //    return $this->fetch();
-        // 查询状态为1的用户数据 并且每页显示10条数据
-        // $list = db('user')
-        //     ->where('status',1)
-        //     ->paginate(5);
-        // $page = $list->render();
-        // // dump($page);
-        // $this->assign('list', $list);
-        // $this->assign('page', $page);
-
-        $view = \app\index\model\Ticket::getName();
-
-        return $this->fetch();
-    }
-    public function Ticket(){
-        
-=======
         $request = Request::instance();
         if( $request->url()=='/timeMachine/' ) $this->assign('hasIndex','');
         else $this->assign('hasIndex',1);
@@ -85,6 +58,5 @@ class Index extends base
         } else {
             return $this->error('注册失败');
         }
->>>>>>> origin/master
     }
 }
