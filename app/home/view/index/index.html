@@ -20,14 +20,11 @@
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/capital-schedule-and-topics.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/section-weapons.css">
-<<<<<<< HEAD
     <link rel="stylesheet" href="/timeMachine/public/static/Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/timeMachine/public/static/Css/tickets.css">
 
-=======
     <link rel="stylesheet" href="/timeMachine/public/static/Animate/animate.min.css">
->>>>>>> origin/master
     <script src="/timeMachine/public/static/Scripts/modernizr.js"></script>
     <!-- <script>
         var _hmt = _hmt || [];
@@ -279,40 +276,7 @@
     $('.capital-index').click(function () {
         $('.p1-o').removeClass('on');
     });
-    $('.slick-partner').slick({
-        lazyLoad: 'ondemand',
-        infinite: true,
-        dots: true,
-        adaptiveHeight: true
-    });
-
-    var $jCounter=$('.j-counter');
-    var $jCounterInput=$jCounter.find('input');
-
-    $jCounter.counter();
-    // 门票张数
-    $jCounterInput.keyup(function (event) {
-        this.value = this.value.replace(/[^0-9]/g, '');
-        var $input = $(this);
-        var max = parseInt($input.data('max'));
-        var min = parseInt($input.data('min'));
-
-        if (this.value.length > 0) {
-            if (parseInt(this.value) > max) {
-                $input.val(max);
-            }
-            if (parseInt(this.value) < min) {
-                $input.val(min);
-            }
-            $("#ticket_number").val($input.val());
-        }
-    });
-
-    $jCounter.on('click', 'span', function (e) {
-        $("#ticket_number").val($('.j-counter').find('input').val());
-    });
-
-    $('[data-toggle="tooltip"]').tooltip();
+    
 
 
 
