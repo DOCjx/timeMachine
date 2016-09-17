@@ -149,8 +149,8 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 }
 
 .capital-ticket {
-  padding: 10px;
-  height: 100px;
+  padding: 0 5px 5px 5px;
+  min-height: 175px;
   margin-bottom: 20px;
   position: relative;
 }

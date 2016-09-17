@@ -831,7 +831,7 @@
 
 .section-buy-tickets .choose-ticket {
     float: left;
-    width: 750px;
+    width: 450px;
 }
 
 .section-buy-tickets .tooltip-inner {
@@ -852,57 +852,12 @@
 }
 
 .conference-info {
-    width: 300px;
+    width: 600px;
     float: right;
     border: 1px solid #e1e1e1;
     padding: 20px 15px;
 }
 
-.conference-info dl {
-    border-bottom: 1px dashed #eee;
-    overflow: hidden;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-.conference-info dt {
-    font-size: 14px;
-    color: #000;
-    margin-bottom: 10px;
-    font-weight: normal;
-}
-
-.conference-info dd {
-    font-size: 12px;
-    color: #8f8f8f;
-}
-
-.conference-info .ul-gifts li {
-    float: left;
-    padding-right: 5px;
-    margin-bottom: 5px;
-
-}
-
-.conference-info .ul-gifts .fa {
-    width: 20px;
-    text-align: center;
-    vertical-align: 0px;
-}
-
-.conference-info .ul-tips {
-    padding-left: 20px;
-}
-
-.conference-info .ul-tips li {
-    margin-bottom: 5px;
-}
-
-.conference-info .notes {
-    font-size: 14px;
-    color: #666666;
-    line-height: 1.5;
-}
 
 .choose-ticket .middle-title {
     border-left: 4px solid #cd0010;
@@ -924,7 +879,11 @@
 }
 
 .choose-ticket .ticket1 .ticket-co-wrapper {
-    top: 11px;
+    top: 2px;
+}
+
+.choose-ticket .ticket1 .ticket-co-wrapper .jieshao{
+    padding: 0 10px 0 10px;
 }
 
 .choose-ticket .capital-ticket {

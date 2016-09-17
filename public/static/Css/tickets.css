@@ -1,0 +1,115 @@
+.conference-info {
+    width: 620px;
+    margin-top: 10px;
+    float: right;
+    border: 1px solid #e1e1e1;
+    padding: 1px 15px 15px 15px;
+}
+
+.conference-info{
+    text-align: justify;
+}
+.conference-info .imgs img{
+    width:100%;
+    height:200px;
+}
+.conference-info img{
+    width:30px;
+    height:30px;
+}
+.conference-info .pinglun{
+    float: right;
+    margin-top: -8px;
+}
+.conference-info .img1{
+    margin-top: 5px;
+}
+.conference-info .conter1{
+    margin-top: 10px;
+    padding: 0 15px 15px 15px;
+    border: 1px solid #e1e1e1;
+    height: 450px;
+    //max-height: 400px;
+}
+.conference-info .conter1 img{
+    border-radius:50%;
+}
+.mo img{
+    border-radius:50%;
+}
+.conference-info .conter1 .anav a{
+    height: 36px;
+}
+.conference-info .conter2,.conter3{
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    min-height: 300px;
+    display: none;
+}
+
+.ticket-wrapper .choose-ticket img{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+
+.choose-ticket .ticket1 .ticket-co-wrapper .jieshao{
+    text-align: justify;
+}
+
+.xiangqing{
+    padding: 20px;
+}
+.nei{
+    padding: 0 15px 10px 45px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.uid{
+    float: right;
+    padding: 20px 20px 0 0;
+}
+
+.changtan .fu{
+    float: right;
+    padding-right: 10px;
+    cursor:pointer;
+}
+.changtan .fu1{
+    display: none;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+}
+.changtan .fu1 textarea{
+    height: 100px;
+    width: 80%;
+}
+
+//分页
+.tcdPageCode a{ text-decoration:none;}
+.tcdPageCode a:hover{ text-decoration:none;}
+.tcdPageCode{padding: 15px 20px;text-align: left;color: #ccc;}
+.tcdPageCode a{display: inline-block;color: #428bca;display: inline-block;height: 25px; line-height: 25px;  padding: 0 10px;border: 1px solid #ddd; margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode a:hover{text-decoration: none;border: 1px solid #428bca;}
+.tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca; border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode span.disabled{ display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px; color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}
+
+//模态框
+.mo a{text-decoration: none;}
+.modal{position:absolute;left:0;right:0;z-index: -1;onscoll:none;}
+.fade{opacity:0;top:-10%;display:block;-webkit-transition:top 0.3s linear;-o-transition:top 0.3s linear;transition:top 0.3s linear;}
+.fade.in{opacity:1;top:10%;}
+.modal-body{width:60%;margin:0 auto;background-color: #fff;border-radius:3px;}
+.modal-title{position:relative;height:50px;background-color: #F5F5F5;line-height: 50px;border-bottom:1px solid #ccc;}
+.mo a.close{display:inline-block;position:absolute;font-size: 3.5rem;color:#000000;top:8px;right:10px;}
+.modal-backup{position:absolute;top:0;left:0;right:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.51);z-index: 1000;display:none;}
+
+.mo a{text-decoration: none;}
+.modal1{position:absolute;left:0;right:0;z-index: -1;onscoll:none;}
+.fade1{opacity:0;top:-10%;display:block;-webkit-transition:top 0.3s linear;-o-transition:top 0.3s linear;transition:top 0.3s linear;}
+.fade1.in{opacity:1;top:10%;}
+.modal-body1{width:60%;margin:0 auto;background-color: #fff;border-radius:3px;}
+.modal-title1{position:relative;height:50px;background-color: #F5F5F5;line-height: 50px;border-bottom:1px solid #ccc;}
+.mo a.close{display:inline-block;position:absolute;font-size: 3.5rem;color:#000000;top:8px;right:10px;}
+.modal-backup{position:absolute;top:0;left:0;right:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.51);z-index: 1000;display:none;}

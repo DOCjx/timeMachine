@@ -29,22 +29,20 @@ $linkModalBeHacker.hover(function () {
 });
 
 // 显示大会日程弹层--helloworld
-$('.tabs-schedule').on('click', '.j-modal-helloworld', function (e) {
+$('.tabs-schedule').on('click', '.j-modal-helloworld', function () {
     e.stopPropagation();
     $('#modal-schedule').addClass('show');
     $('.schedule-detail-list').slick('slickGoTo', 0, true);
 
 });
 // 显示大会日程弹层--tobeahacker
-$('.tabs-schedule').on('click', '.j-modal-tobeahacker', function (e) {
+$('.tabs-schedule').on('click', '.j-modal-tobeahacker', function () {
     e.stopPropagation();
     $('#modal-schedule').addClass('show');
     $('.schedule-detail-list').slick('slickGoTo', 1, true);
 });
 // 大会日程详情--轮播--修改当前位置
-$('.schedule-detail-list').on('afterChange', function (event, slick, currentSlide) {
-    $('.schedule-detail-list-nav .current b').text(currentSlide + 1);
-});
+
 
 // 大会议题--初始化轮播
 $('.list-topics').slick({
@@ -117,3 +115,4 @@ $('.section-topics .item-topic').hover(function () {
     };
 
 }(jQuery));
+

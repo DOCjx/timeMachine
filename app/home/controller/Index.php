@@ -3,6 +3,8 @@ namespace app\home\controller;
 
 use think\Controller;
 use think\Db;
+use think\View;
+use app\home\model\Ticket;
 
 class Index extends base
 {
@@ -26,6 +28,12 @@ class Index extends base
         // // dump($page);
         // $this->assign('list', $list);
         // $this->assign('page', $page);
+
+        $view = \app\index\model\Ticket::getName();
+
         return $this->fetch();
+    }
+    public function Ticket(){
+        
     }
 }
