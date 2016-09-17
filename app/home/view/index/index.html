@@ -276,14 +276,6 @@
     $('.capital-index').click(function () {
         $('.p1-o').removeClass('on');
     });
-    $('.slick-partner').slick({
-        lazyLoad: 'ondemand',
-        infinite: true,
-        dots: true,
-        adaptiveHeight: true
-    });
-
-    
 
 
 
@@ -301,9 +293,11 @@
     });
     $('#login-back').click(function(){
         $('#login-box').css('display','none');
+        $('#login-content').css('display','none');
     });
     $('.close').click(function(){
         $('#login-box').css('display','none');
+        $('#login-content').css('display','none');
     });
     $('#login-form a').click(function(){
         setAnim("#login-form","rollOut");
