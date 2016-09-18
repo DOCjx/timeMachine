@@ -29,7 +29,7 @@ $linkModalBeHacker.hover(function () {
 });
 
 // 显示大会日程弹层--helloworld
-$('.tabs-schedule').on('click', '.j-modal-helloworld', function () {
+$('.j-modal-helloworld').on('click', function (e) {
     e.stopPropagation();
     $('#modal-schedule').addClass('show');
     $('.schedule-detail-list').slick('slickGoTo', 0, true);

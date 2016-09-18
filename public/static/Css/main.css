@@ -7329,7 +7329,7 @@ button.close {
 }
 
 .fa-close:before, .fa-remove:before, .fa-times:before {
-    content: ""
+    content: " "
 }
 
 .fa-search-plus:before {

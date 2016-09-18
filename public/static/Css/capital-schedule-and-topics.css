@@ -145,7 +145,7 @@
     left: 0;
 }
 
-..icon-link .has-content:before {
+.icon-link .has-content:before {
     width: 18px;
     bottom: 5px;
     -webkit-transition: width .2s;
@@ -172,7 +172,7 @@
 
 .modal-schedule.show {
     z-index: 2000;
-    opacity: 1;
+    opacity: 0.95;
 }
 
 .modal-schedule .schedule-detail-list {
@@ -218,6 +218,7 @@
     margin-top: 30px;
     color: #8f8f8f;
     line-height: 1.7;
+    font-size: 18px;
 }
 
 .modal-schedule .schedule-detail .teacher {
@@ -236,8 +237,13 @@
 .modal-schedule .schedule-detail .teacher .name {
     font-size: 24px;
     color: #666;
+    margin-top: 10px;
 }
-
+.type{
+    width: 303px;
+    height: 38px;
+    margin-top: 10px;
+}
 .modal-schedule .schedule-detail .join .ti {
     font-size: 18px;
     color: #cd000f;
@@ -256,8 +262,8 @@
 .modal-schedule .buy {
     position: absolute;
     right: 60px;
-    bottom: 60px;
-    line-height: 43px;
+    bottom: 25px;
+    line-height: 40px;
     border: 1px solid #cd000f;
     border-radius: 23px;
     font-size: 24px;
@@ -279,7 +285,7 @@
     color: #fff;
 }
 
-.modal-schedule .fa-times {
+.fa-times {
     position: absolute;
     top: 60px;
     right: 60px;
@@ -290,7 +296,7 @@
     transition: transform .2s;
 }
 
-.modal-schedule .fa-times:hover{
+.fa-times:hover{
     transform: rotate(180deg);
 }
 
