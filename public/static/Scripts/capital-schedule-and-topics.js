@@ -11,7 +11,7 @@ $('#modal-schedule').on('click', function (e) {
     }
 });
 // 隐藏大会日程弹层
-$('.section-schedule').on('click', function () {
+$('.close').on('click', function () {
     $('#modal-schedule').removeClass('show');
 });
 
