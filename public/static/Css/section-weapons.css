@@ -72,7 +72,7 @@
     top: 5px;
     width: 15px;
     height: 3px;
-    background-color: #cd000f
+    background-color: #cd000f;
 }
 
 .list-weapon .name {
@@ -275,5 +275,6 @@
 
 .weapon-info-wrapper .info b {
     color: #fff;
-    font-weight: 400
+    font-weight: 400;
 }
+
