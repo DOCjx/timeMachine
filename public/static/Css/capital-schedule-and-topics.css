@@ -50,15 +50,22 @@
 
 /* 调整其它页面样式 end*/
 /* fix 冲突 begin*/
+.section-schedule .tabs-schedule .nav-tabs li a {
+    height: auto;
+}
 
-.link {
+.section-schedule .table-schedule .link {
     height: auto;
     line-height: 20px;
 }
 
-.icon-link {
+.section-schedule .table-schedule .icon-link {
     height: auto;
     line-height: inherit;
+}
+
+.section-schedule .download-schedule .fa-download {
+    vertical-align: baseline;
 }
 
 .modal-schedule .buy {
@@ -86,21 +93,118 @@
 
 /* fix 冲突 end*/
 /* 大会日程、大会议题 样式 begin*/
+.section-schedule {
+    background-image: url("../Images/section-schedule-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
-.link {
+.section-schedule .section-schedule-title {
+    margin-bottom: 56px;
+}
+
+.section-schedule .tabs-schedule {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.section-schedule .tabs-schedule .nav-tabs {
+    border-top: 1px solid #cd000f;
+    border-bottom: 1px solid #cd000f;
+    padding: 1px 0;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li a {
+    border: none;
+    border-radius: 0;
+    line-height: 20px;
+    color: #cd000f;
+    letter-spacing: 3px;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li a:hover, .section-schedule .tabs-schedule .nav-tabs li a:active {
+    border: none;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li.active a {
+    background-color: #cd000f;
+    color: #fff;
+}
+
+.section-schedule .tabs-schedule .nav-tabs li.active a:hover, .section-schedule .tabs-schedule .nav-tabs li.active a:active, .section-schedule .tabs-schedule .nav-tabs li.active a:focus {
+    border: none;
+}
+
+.section-schedule .tabs-schedule .tab-content {
+    height: 450px;
+}
+
+.section-schedule .table-schedule-title {
+    text-align: center;
+    color: #cd000f;
+    font-size: 20px;
+    margin: 57px 0 38px;
+}
+
+.section-schedule .table-schedule-title time {
+    font-weight: bold;
+    margin-right: 30px;
+    letter-spacing: 4px;
+}
+
+.section-schedule .table-schedule-title .text-gray {
+    color: #666666;
+}
+
+.section-schedule .table-schedule {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.section-schedule .table-schedule td {
+    font-size: 14px;
+    padding: 20px 15px;
+    border-color: #bfbfbf;
+}
+
+.section-schedule .table-schedule time {
+    display: block;
+    font-size: 18px;
+    color: #cd000f;
+    margin-bottom: 5px;
+}
+
+.section-schedule .table-schedule .title {
+    margin-bottom: 10px;
+}
+
+.section-schedule .table-schedule .intro {
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.section-schedule .table-schedule .en {
+    color: #8f8f8f;
+}
+
+.section-schedule .table-schedule .link {
     position: relative;
     color: #444444;
 }
 
-.link:hover, .link.active {
+.section-schedule .table-schedule .link:hover, .section-schedule .table-schedule .link.active {
     color: #cd000f;
 }
 
+<<<<<<< HEAD
 .link:hover:after, .link.active:after {
+=======
+.section-schedule .table-schedule .link:hover:after, .section-schedule .table-schedule .link.active:after {
+>>>>>>> parent of 6a71564... 文件部分修改
     background-color: #cd000f;
 }
 
-.link:after {
+.section-schedule .table-schedule .link:after {
     content: '';
     position: absolute;
     left: 0;
@@ -110,6 +214,7 @@
     width: 100%;
 }
 
+<<<<<<< HEAD
 .icon-link {
     position: absolute;
     left: 1400px;
@@ -123,9 +228,22 @@
 
 .icon-link.active .has-content:before {
     width: 25px;
+=======
+.section-schedule .table-schedule .icon-link {
+    float: right;
+    width: 20px;
 }
 
-.icon-link .has-content {
+.section-schedule .table-schedule .icon-link.active .has-content {
+    width: 19px;
+}
+
+.section-schedule .table-schedule .icon-link.active .has-content:before {
+    width: 19px;
+>>>>>>> parent of 6a71564... 文件部分修改
+}
+
+.section-schedule .table-schedule .icon-link .has-content {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -136,7 +254,7 @@
     transition: width .2s;
 }
 
-.icon-link .has-content:before, .icon-link .has-content:after {
+.section-schedule .table-schedule .icon-link .has-content:before, .section-schedule .table-schedule .icon-link .has-content:after {
     content: '';
     position: absolute;
     height: 1px;
@@ -145,16 +263,53 @@
     left: 0;
 }
 
+<<<<<<< HEAD
 ..icon-link .has-content:before {
     width: 18px;
+=======
+.section-schedule .table-schedule .icon-link .has-content:before {
+    width: 13px;
+>>>>>>> parent of 6a71564... 文件部分修改
     bottom: 5px;
     -webkit-transition: width .2s;
     transition: width .2s;
 }
 
+<<<<<<< HEAD
 .icon-link .has-content:after {
     width: 25px;
+=======
+.section-schedule .table-schedule .icon-link .has-content:after {
+    width: 19px;
+>>>>>>> parent of 6a71564... 文件部分修改
     top: 6px;
+}
+
+.section-schedule .download-schedule {
+    line-height: 30px;
+    color: #666666;
+}
+
+.section-schedule .download-schedule span {
+    display: inline-block;
+    letter-spacing: 5px;
+    vertical-align: middle;
+}
+
+.section-schedule .download-schedule .download {
+    display: inline-block;
+    width: 29px;
+    height: 33px;
+    background-image: url("../Images/section-schedule-download.png");
+    vertical-align: middle;
+}
+
+.section-schedule .download-schedule:hover {
+    color: #cd000f;
+}
+
+.section-schedule .download-schedule:hover .download {
+    background-position: -41px 0px;
 }
 
 .modal-schedule {
@@ -227,6 +382,13 @@
     margin: 27px 0;
 }
 
+.modal-schedule .schedule-detail .teacher .avatar {
+    display: inline-block;
+    width: 142px;
+    height: 142px;
+    vertical-align: top;
+}
+
 .modal-schedule .schedule-detail .teacher .info {
     display: inline-block;
     margin-left: 30px;
@@ -236,6 +398,28 @@
 .modal-schedule .schedule-detail .teacher .name {
     font-size: 24px;
     color: #666;
+}
+
+.modal-schedule .schedule-detail .teacher .des {
+    color: #8f8f8f;
+    margin: 8px 0;
+}
+
+.modal-schedule .schedule-detail .teacher .content {
+    color: #8f8f8f;
+}
+
+.modal-schedule .schedule-detail .teacher .content b {
+    color: #666;
+}
+
+.modal-schedule .schedule-detail .teacher .content:after {
+    content: '';
+    display: block;
+    width: 20px;
+    margin-top: 10px;
+    height: 3px;
+    background-color: #cd000f;
 }
 
 .modal-schedule .schedule-detail .join .ti {
@@ -251,6 +435,34 @@
 .modal-schedule .schedule-detail .join .term {
     padding-right: 17px;
     color: #666666;
+}
+
+.modal-schedule .schedule-detail-list-nav {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    font-size: 40px;
+    color: #8f8f8f;
+}
+
+.modal-schedule .schedule-detail-list-nav .current {
+    vertical-align: middle;
+    padding: 0 30px;
+}
+
+.modal-schedule .schedule-detail-list-nav .fa {
+    color: #666;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.modal-schedule .schedule-detail-list-nav .fa:hover {
+    color: #cd000f;
+}
+
+.modal-schedule .schedule-detail-list-nav .arrow {
+    color: #666;
+    cursor: pointer;
 }
 
 .modal-schedule .buy {
