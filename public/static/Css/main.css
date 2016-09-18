@@ -12884,68 +12884,63 @@ button.close {
     line-height: 1.5
 }
 
-.west-kcon .section-partner .slick-partner-wrapper {
+.section-partner .slick-partner-wrapper {
     text-align: center
 }
 
-.west-kcon .section-partner .slick-partner {
+.section-partner .slick-partner {
     display: inline-block;
     width: 1280px
 }
-
-.west-kcon .section-partner .item-group:focus {
+.section-partner .item-group:focus {
     outline: none
 }
-
-.west-kcon .section-partner .item-group.item-group-1 .partner {
+.section-partner .item-group.item-group-1 .partner {
     margin: 0 80px
 }
-
-.west-kcon .section-partner .item-group.item-group-2 img {
+.section-partner .item-group.item-group-2 img {
     margin: 0 50px
 }
-
-.west-kcon .section-partner .item-group.item-group-3 img, .west-kcon .section-partner .item-group.item-group-4 img {
+.section-partner .item-group.item-group-3 img, .section-partner .item-group.item-group-4 img {
     margin: 0 70px
 }
 
-.west-kcon .section-partner .partner {
+.section-partner .partner {
     display: inline-block;
     vertical-align: top
 }
 
-.west-kcon .section-partner .title {
+.section-partner .title {
     font-size: 24px;
     margin-bottom: 20px
 }
 
-.west-kcon .section-partner .img-wrapper {
+.section-partner .img-wrapper {
     line-height: 100px
 }
-
-.west-kcon .section-partner .img-wrapper img {
+.section-partner .img-wrapper img {
     display: inline-block;
     vertical-align: middle
 }
 
-.west-kcon .section-partner .slick-slider .slick-next, .west-kcon .section-partner .slick-slider .slick-prev {
+.section-partner .slick-slider .slick-next, .section-partner .slick-slider .slick-prev {
     top: 40%
 }
 
-.west-kcon .section-partner .slick-slider .slick-next:before, .west-kcon .section-partner .slick-slider .slick-prev:before {
+.section-partner .slick-slider .slick-next:before,  .section-partner .slick-slider .slick-prev:before {
     color: #bbb
 }
 
-.west-kcon .section-partner .slick-slider .slick-dots li button:before {
+.section-partner .slick-slider .slick-dots li button:before {
     color: #d2d2d2;
     opacity: 1
 }
 
-.west-kcon .section-partner .slick-slider .slick-dots li.slick-active button:before {
+.section-partner .slick-slider .slick-dots li.slick-active button:before {
     color: #cd000f
 }
 
-.west-kcon .section-advisory-groups {
+ .section-advisory-groups {
     background-color: #181818
 }
 

@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="/timeMachine/public/static/Css/tickets.css">
 
     <link rel="stylesheet" href="/timeMachine/public/static/Animate/animate.min.css">
+    
+<script src="/timeMachine/public/static/Jquery3.0/jquery.min.js"></script>
+<script src="/timeMachine/public/static/Jquery3.0/jquery.page.js"></script>
     <script src="/timeMachine/public/static/Scripts/modernizr.js"></script>
     <!-- <script>
         var _hmt = _hmt || [];
@@ -254,8 +257,6 @@
 <script src="/timeMachine/public/static/Scripts/capital-schedule-and-topics.js"></script>
 <script src="/timeMachine/public/static/Scripts/section-weapons.js"></script>
 <script src="/timeMachine/public/static/Scripts/tickets.js"></script>
-<script src="/timeMachine/public/static/Jquery3.0/jquery.min.js"></script>
-<script src="/timeMachine/public/static/Jquery3.0/jquery.page.js"></script>
 
 <script>
     $('body').on('click', '.menu button', function (e) {
@@ -278,6 +279,12 @@
         $('.p1-o').removeClass('on');
     });
 
+  $('.slick-partner').slick({
+        lazyLoad: 'ondemand',
+        infinite: true,
+        dots: true,
+        adaptiveHeight: true
+    });
 
 
     function setAnim(tag, action) {

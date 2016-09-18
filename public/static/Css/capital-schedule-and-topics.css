@@ -96,7 +96,7 @@
     color: #cd000f;
 }
 
-.link:hover:after, .section-schedule .table-schedule .link.active:after {
+.link:hover:after, .link.active:after {
     background-color: #cd000f;
 }
 
@@ -114,22 +114,22 @@
     position: absolute;
     left: 1400px;
     right: 100px;
-    width: 50px;
+    width: 25px;
 }
 
 .icon-link.active .has-content {
-    width: 19px;
+    width: 25px;
 }
 
 .icon-link.active .has-content:before {
-    width: 19px;
+    width: 25px;
 }
 
 .icon-link .has-content {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    width: 9px;
+    width: 13px;
     height: 1px;
     background-color: #cd000f;
     -webkit-transition: width .2s;
@@ -146,14 +146,14 @@
 }
 
 ..icon-link .has-content:before {
-    width: 13px;
+    width: 18px;
     bottom: 5px;
     -webkit-transition: width .2s;
     transition: width .2s;
 }
 
 .icon-link .has-content:after {
-    width: 19px;
+    width: 25px;
     top: 6px;
 }
 
