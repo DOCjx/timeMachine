@@ -521,7 +521,6 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 .section-partner{ padding-top: 0; }
 .w50p{ width: 50%; }
 .mb30{ margin-bottom: 20px; }
-.p-partners{ background: #f7f7f7 url(../Images/section-schedule-bg.jpg) repeat; }
 .partner-wrap{ height: 600px; max-width: 980px; margin: 3% auto 5%; }
 .partner-item{ text-align: left; }
 .partner-item h3{ line-height: 1; font-size: 24px; color:#444444; border-left: 4px solid #cd000f; padding-left: 10px; }
@@ -542,7 +541,7 @@ i { display: inline-block; vertical-align: middle; background-repeat: no-repeat;
 }
 
 .p-partners {
-    background: #f7f7f7 url(../Images/bg.png) repeat;
+    background: #f7f7f7 url(../Images/2.jpg) repeat;
 }
 
 .partner-wrap {
